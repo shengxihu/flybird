@@ -4,21 +4,24 @@ function test (){
 	var t = 0;
 	var bird = document.getElementById('bird');
 	time = setInterval(function(){
+		var btm = parseFloat(bird.offsetTop);
 	 	t += 1;
-	 	if (high < 660) {
-	 		high = (500*Math.pow(t,2))/2;
+	 	if (high < 700 && btm <380) {
+	 		high += (Math.pow(t,2))/2;
 	 	} else {
-	 		high = 660;
+	 		alert("碰到下边界，游戏结束！")
+	 		clearTimeout(time);
+	 		return false;
 	 	}
 	 	console.log(high);
 	 	bird.style.marginTop = high + 'px';
-	},1000)
+	},100)
 }
 
 var cont = document.getElementById('cont');
 cont.addEventListener('click',function(){
 	clearTimeout(time);
-	high = 200;
+	high -= 100;
 	test ();
 })
 test();

@@ -13,12 +13,19 @@ html,body {
 	height: 20px;
 	background-color: red;
 	margin: 0 auto;
-	transition: margin-top 1s;
-	-moz-transition: margin-top 1s; /* Firefox 4 */
-	-webkit-transition: margin-top 1s; /* Safari 和 Chrome */
-	-o-transition: margin-top 1s; 
+	transition: margin-top .1s;
+	-moz-transition: margin-top .1s; /* Firefox 4 */
+	-webkit-transition: margin-top .1s; /* Safari 和 Chrome */
+	-o-transition: margin-top .1s; 
 	transition-timing-function: linear;
 	-moz-transition-timing-function: linear; /* Firefox 4 */
 	-webkit-transition-timing-function: linear; /* Safari 和 Chrome */
 	-o-transition-timing-function: linear; /* Opera */
+}
+.bot {
+	height: 300px;
+	width: 100%;
+	background: red;
+	position: absolute;
+	bottom: 0;
 }
