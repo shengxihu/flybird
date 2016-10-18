@@ -29,3 +29,22 @@ html,body {
 	position: absolute;
 	bottom: 0;
 }
+.fbi {
+	width: 200px;
+	height: 100px;
+	background-color: red;
+	font-size: 40px;
+	text-align: center;
+	line-height: 100px;
+	position: absolute;
+	top: 0;
+	right: 0;
+	transition: right .1s;
+	-moz-transition: right .1s; /* Firefox 4 */
+	-webkit-transition: right .1s; /* Safari 和 Chrome */
+	-o-transition: right .1s; 
+	transition-timing-function: linear;
+	-moz-transition-timing-function: linear; /* Firefox 4 */
+	-webkit-transition-timing-function: linear; /* Safari 和 Chrome */
+	-o-transition-timing-function: linear; /* Opera */
+}
